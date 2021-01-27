@@ -1,0 +1,55 @@
+@charset "UTF-8"
+
+@import './mixin/commonMixin'
+@import './mixin/pxToVw'
+@import './mixin/pxToRem'
+@import './mixin/mediaQuery'
+
+// Google WEBフォント を使いたいときは下記コメントアウトを外す
+// @import './mixin/notoSansJP'
+// +notoSansJP
+
+
+// ---------- 変数のセッティング ----------
+$--image_Path: '../img/'
+
+// $--baseFont: NotoSansJP, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif
+$--baseFont: "Hiragino Kaku Gothic Std", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, メイリオ, Meiryo, sans-serif
+
+// ページの横幅の基準値をセット、各種Mixinに影響
+// $--pageDesignWidth: 640
+$--pageDesignWidth: 750
+
+
+
+// ---------------- style -----------------
+html
+  font-size: 16px
+
+body
+  font-family: $--baseFont
+
+// wrapper style
+.container
+  +width($--pageDesignWidth)
+  +mx-auto
+  text-align: center
+
+/* margin style */
+.mx-auto
+  +mx-auto
+.mb-20
+  +mb(20)
+
+/* padding style */
+// .pt-30
+//   +pt(30)
+
+/* font size style */
+// .fz-18
+//   +fz(18)
+
+/* contents style */
+header
+
+footer

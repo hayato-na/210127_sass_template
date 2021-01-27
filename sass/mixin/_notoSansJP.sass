@@ -1,0 +1,9 @@
+@mixin notoSansJP
+  $--fonts_Path: './fonts/'
+  @import './mixin/fonts'
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Thin.otf', 100, normal, otf)
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Light.otf', 300, normal, otf)
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Regular.otf', 400, normal, otf)
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Medium.otf', 500, normal, otf)
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Bold.otf', 700, normal, otf)
+  @include font-face('NotoSansJP', $--fonts_Path+'NotoSansJP-Black.otf', 900, normal, otf)

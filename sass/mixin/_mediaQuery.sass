@@ -1,0 +1,8 @@
+
+@mixin mq_max($breakpoint_max:$--pageDesignWidth)
+  @media screen and (max-width: px_to_rem($breakpoint_max))
+    @content
+
+@mixin mq_min($breakpoint_min:$--pageDesignWidth + 1)
+  @media screen and (min-width: px_to_rem($breakpoint_min))
+    @content

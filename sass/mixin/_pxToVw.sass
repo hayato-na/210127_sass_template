@@ -1,0 +1,5 @@
+@function px_to_vw($size, $std_width: $--pageDesignWidth)
+	@return (100 / $std_width) * $size * 1vw
+
+@function px_to_vw_pc($size, $std_width: 1024)
+	@return (100 / $std_width) * $size * 1vw

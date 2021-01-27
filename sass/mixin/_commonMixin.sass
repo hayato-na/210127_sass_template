@@ -1,0 +1,54 @@
+// mixin
+@mixin W_n_H($width, $height)
+  width: px_to_vw($width)
+  max-width: px_to_rem($width)
+  height: px_to_vw($height)
+  max-height: px_to_rem($height)
+@mixin W_set($width)
+  width: px_to_vw($width)
+  max-width: px_to_rem($width)
+
+// margin mixin
+@mixin mx-auto
+  margin-left: auto
+  margin-right: auto
+@mixin mt($pxSize)
+  margin-top: px_to_vw($pxSize)
+  +mq_min(751)
+    margin-top: px_to_rem($pxSize)
+@mixin mb($pxSize)
+  margin-bottom: px_to_vw($pxSize)
+  +mq_min(751)
+    margin-bottom: px_to_rem($pxSize)
+@mixin ml($pxSize)
+  margin-left: px_to_vw($pxSize)
+  +mq_min(751)
+    margin-left: px_to_rem($pxSize)
+@mixin mr($pxSize)
+  margin-right: px_to_vw($pxSize)
+  +mq_min(751)
+    margin-right: px_to_rem($pxSize)
+
+// padding mixin
+@mixin pt($pxSize)
+  padding-top: px_to_vw($pxSize)
+  +mq_min(751)
+    padding-top: px_to_rem($pxSize)
+@mixin pb($pxSize)
+  padding-bottom: px_to_vw($pxSize)
+  +mq_min(751)
+    padding-bottom: px_to_rem($pxSize)
+@mixin pl($pxSize)
+  padding-left: px_to_vw($pxSize)
+  +mq_min(751)
+    padding-left: px_to_rem($pxSize)
+@mixin pr($pxSize)
+  padding-right: px_to_vw($pxSize)
+  +mq_min(751)
+    padding-right: px_to_rem($pxSize)
+
+// font size mixin
+@mixin fz($fontSize)
+  font-size: px_to_vw($fontSize)
+  +mq_min(751)
+    font-size: px_to_rem($fontSize)
